@@ -35,6 +35,10 @@
         <li class="flex-1"></li>
         <li>
           <!-- APPTHEME TOGGLE START -->
+          <Icon
+            aria-hidden="true"
+            class="w-5 h-5 bg-grey-700"
+            name="solar:moon-outline" />
           <UTooltip
             text="Toggle theme"
             :ui="{ popper: { strategy: 'absolute' } }">
@@ -47,9 +51,11 @@
                 :name="isDark ? 'solar:sun-2-outline' : 'solar:moon-outline'" />
               <span class="sr-only">Toggle theme</span>
             </button>
+            <Icon
+              class="w-5 h-5"
+              name="heroicons:beaker" />
           </UTooltip>
           <!-- APPTHEME TOGGLE END -->
-          >
         </li>
       </ul>
     </nav>
@@ -57,12 +63,11 @@
   <!-- APPNAVBAR START -->
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
+import { useColorMode } from '@vueuse/core'
 
 // APP THEME
-// const colorMode = useColorMode()
-import { useColorMode } from '@vueuse/core'
 
 const metaDef = useDefault('meta')
 useSeoMeta({ ...metaDef })
@@ -94,7 +99,7 @@ const items = [
   }
 ]
 
-const mode = useColorMode()
+const colorMode = useColorMode()
 
 const isDark = computed({
   get: () => colorMode.value === 'dark',

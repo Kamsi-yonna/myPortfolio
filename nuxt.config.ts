@@ -39,8 +39,7 @@ export default defineNuxtConfig({
         download: true
       }
     ],
-    '@nuxt/image',
-    '@vueuse/core'
+    '@nuxt/image'
   ],
   components: [],
   plugins: [],
