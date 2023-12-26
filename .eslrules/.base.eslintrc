@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "indent": "off",
+    "max-len": "off",
+    "no-plusplus": "off",
+    "arrow-parens": "off",
+    "comma-dangle": "off",
+    "prefer-template": "error",
+    "no-param-reassign": "off",
+    "consistent-return": "off",
+    "implicit-arrow-linebreak": "off"
+  }
+}

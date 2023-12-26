@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "import/no-named-as-default-member": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "prefer-arrow-functions/prefer-arrow-functions": "error"
+  }
+}

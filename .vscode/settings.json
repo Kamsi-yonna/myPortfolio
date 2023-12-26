@@ -1,0 +1,68 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.rulers": [120, 150],
+  "editor.wordWrapColumn": 120,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.format.enable": false,
+  "eslint.run": "onType",
+  "eslint.quiet": false,
+  "workbench.colorCustomizations": {
+    // "activityBar.activeBackground": "#e58d73",
+    // "activityBar.background": "#e58d73",
+    // "activityBar.foreground": "#e7e7e7",
+    // "activityBar.inactiveForeground": "#e7e7e799",
+    // "activityBarBadge.background": "#ffc001",
+    // "activityBarBadge.foreground": "#e7e7e7",
+    // "commandCenter.border": "#e7e7e799",
+    // "sash.hoverBorder": "#e58d73",
+    // "statusBar.background": "#215732",
+    // "statusBar.foreground": "#e7e7e7",
+    // "statusBarItem.hoverBackground": "#e58d73",
+    // "statusBarItem.remoteBackground": "#215732",
+    // "statusBarItem.remoteForeground": "#e7e7e7",
+    // "titleBar.activeBackground": "#215732",
+    // "titleBar.activeForeground": "#e7e7e7",
+    // "titleBar.inactiveBackground": "#21573299",
+    // "titleBar.inactiveForeground": "#e7e7e799"
+  }
+}
