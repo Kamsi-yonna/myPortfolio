@@ -46,7 +46,7 @@
               <Icon
                 aria-hidden="true"
                 class="w-5 h-5"
-                :name="isDarkMode ? 'solar:moon-outline' : 'solar:sun-2-outline'" />
+                :name="isDarkMode ? 'solar:sun-2-outline' : 'solar:moon-outline'" />
               <span class="sr-only">Toggle theme</span>
             </button>
           </UTooltip>
@@ -55,7 +55,15 @@
       </ul>
     </nav>
   </div>
+  <h1>A VERY NICE FONT</h1>
   <!-- APPNAVBAR START -->
+  <!-- FOOTER START -->
+
+  <footer class="mt-10 text-[12px] max-w-2xl mx-auto text-gray-700 dark:text-gray-50 text-center pb-8">
+    <br />
+    <p>© Etiobi Kamsiyonna {{ currentYear }}. All rights reserved.</p>
+  </footer>
+  <!-- FOOTER END -->
 </template>
 
 <script setup>
@@ -84,6 +92,25 @@ const isDarkMode = ref(mode === 'dark')
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value
   store.value = isDarkMode.value ? 'dark' : 'light'
-  // console.log(isDarkMode.value)
 }
+const currentYear = new Date().getFullYear()
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(0.5rem);
+}
+.page-leave-to {
+  transform: translateY(-5px);
+}
+
+.page-enter-from {
+  transform: translateY(5px);
+}
+</style>

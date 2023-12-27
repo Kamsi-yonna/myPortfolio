@@ -6,13 +6,15 @@ export default defineNuxtConfig({
   ssr: false,
 
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
       htmlAttrs: {
-        lang: 'en'
+        lang: 'en',
+        class: 'h-full'
       },
       bodyAttrs: {
-        class: 'antialiased bg-gray-50 dark:bg-black min-h-screen'
+        class: 'antialiased bg-gray-50 dark:bg-black min-h-screen '
       }
     }
   },
@@ -32,29 +34,23 @@ export default defineNuxtConfig({
       '@nuxtjs/google-fonts',
       {
         families: {
-          Karla: {
-            wght: [300, 400, 500, 700, 800],
-            ital: [300, 400, 500, 700, 800]
+          Audiowide: {
+            wght: [300, 400, 500, 700, 800]
           }
         },
         display: 'swap',
         download: true
       }
     ],
-    ['@nuxt/image', {}],
-    ['nuxt-icon', {}],
-    ['@nuxt/ui', {}],
-    ['@vueuse/nuxt', {}]
+    '@nuxt/image',
+    'nuxt-icon',
+    '@nuxt/ui',
+    '@vueuse/nuxt',
+    '@nuxt/content'
   ],
   ui: {
     icons: ['heroicons', 'lucide']
   },
   components: [],
   plugins: []
-  // tailwindcss: {
-  //   cssPath: '~/assets/css/tailwind/index.css',
-  //   configPath: 'tailwind.config',
-  //   injectPosition: 'first',
-  //   viewer: false
-  // }
 })

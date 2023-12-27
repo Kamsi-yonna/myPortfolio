@@ -23,7 +23,7 @@ dependencies:
 
 devDependencies:
   '@nuxt/content':
-    specifier: ^2.9.0
+    specifier: ^2.10.0
     version: 2.10.0(nuxt@3.8.2)(vue@3.3.11)
   '@nuxt/devtools':
     specifier: latest
