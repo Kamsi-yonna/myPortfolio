@@ -84,6 +84,6 @@ const isDarkMode = ref(mode === 'dark')
 const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value
   store.value = isDarkMode.value ? 'dark' : 'light'
-  console.log(isDarkMode.value)
+  // console.log(isDarkMode.value)
 }
 </script>

@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
       htmlAttrs: {
         lang: 'en'
+      },
+      bodyAttrs: {
+        class: 'antialiased bg-gray-50 dark:bg-black min-h-screen'
       }
     }
   },
@@ -25,7 +28,6 @@ export default defineNuxtConfig({
         lintOnStart: true
       }
     ],
-    ['@nuxtjs/tailwindcss', {}],
     [
       '@nuxtjs/google-fonts',
       {
@@ -39,15 +41,20 @@ export default defineNuxtConfig({
         download: true
       }
     ],
-    '@nuxt/image',
-    ['nuxt-icon', {}]
+    ['@nuxt/image', {}],
+    ['nuxt-icon', {}],
+    ['@nuxt/ui', {}],
+    ['@vueuse/nuxt', {}]
   ],
+  ui: {
+    icons: ['heroicons', 'lucide']
+  },
   components: [],
-  plugins: [],
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind/index.css',
-    configPath: 'tailwind.config',
-    injectPosition: 'first',
-    viewer: false
-  }
+  plugins: []
+  // tailwindcss: {
+  //   cssPath: '~/assets/css/tailwind/index.css',
+  //   configPath: 'tailwind.config',
+  //   injectPosition: 'first',
+  //   viewer: false
+  // }
 })
