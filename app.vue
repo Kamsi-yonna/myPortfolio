@@ -35,25 +35,20 @@
         <li class="flex-1"></li>
         <li>
           <!-- APPTHEME TOGGLE START -->
-          <Icon
-            aria-hidden="true"
-            class="w-5 h-5 bg-grey-700"
-            name="solar:moon-outline" />
+
           <UTooltip
             text="Toggle theme"
             :ui="{ popper: { strategy: 'absolute' } }">
             <button
               class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
-              @click="isDark = !isDark">
+              @click="toggleTheme">
+              {{ mode }}
               <Icon
                 aria-hidden="true"
                 class="w-5 h-5"
-                :name="isDark ? 'solar:sun-2-outline' : 'solar:moon-outline'" />
+                :name="isDarkMode ? 'solar:moon-outline' : 'solar:sun-2-outline'" />
               <span class="sr-only">Toggle theme</span>
             </button>
-            <Icon
-              class="w-5 h-5"
-              name="heroicons:beaker" />
           </UTooltip>
           <!-- APPTHEME TOGGLE END -->
         </li>
@@ -66,8 +61,7 @@
 <script setup>
 import { useFixedHeader } from 'vue-use-fixed-header'
 import { useColorMode } from '@vueuse/core'
-
-// APP THEME
+import { ref } from 'vue'
 
 const metaDef = useDefault('meta')
 useSeoMeta({ ...metaDef })
@@ -76,35 +70,20 @@ const { styles } = useFixedHeader(headerRef)
 
 const items = [
   { name: 'Home', path: '/', icon: 'solar:home-smile-outline' },
-  {
-    name: 'Projects',
-    path: '/projects',
-    icon: 'solar:folder-with-files-outline'
-  },
-  {
-    name: 'Articles',
-    path: '/articles',
-    icon: 'solar:document-add-outline'
-  },
+  { name: 'Projects', path: '/projects', icon: 'solar:folder-with-files-outline' },
+  { name: 'Articles', path: '/articles', icon: 'solar:document-add-outline' },
   { name: 'Lab', path: '/lab', icon: 'heroicons:beaker' },
-  {
-    name: "What's in my bag?",
-    path: '/whats-in-my-bag',
-    icon: 'solar:backpack-outline'
-  },
-  {
-    name: 'Bookmarks',
-    path: '/bookmarks',
-    icon: 'solar:bookmark-linear'
-  }
+  { name: "What's in my bag?", path: '/whats-in-my-bag', icon: 'solar:backpack-outline' },
+  { name: 'Bookmarks', path: '/bookmarks', icon: 'solar:bookmark-linear' }
 ]
 
-const colorMode = useColorMode()
+const { mode, store } = useColorMode()
 
-const isDark = computed({
-  get: () => colorMode.value === 'dark',
-  set: () => {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-  }
-})
+const isDarkMode = ref(mode === 'dark')
+
+const toggleTheme = () => {
+  isDarkMode.value = !isDarkMode.value
+  store.value = isDarkMode.value ? 'dark' : 'light'
+  console.log(isDarkMode.value)
+}
 </script>

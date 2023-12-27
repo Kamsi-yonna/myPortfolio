@@ -39,7 +39,8 @@ export default defineNuxtConfig({
         download: true
       }
     ],
-    '@nuxt/image'
+    '@nuxt/image',
+    ['nuxt-icon', {}]
   ],
   components: [],
   plugins: [],
