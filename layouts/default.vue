@@ -49,7 +49,7 @@
     </nav>
   </div>
   <div class="h-32"></div>
-  <Slot />
+  <slot />
   <div class="h-32"></div>
   <footer class="text-[12px] max-w-2xl mx-auto text-gray-700 dark:text-gray-50 text-center pb-8">
     <br />
@@ -83,3 +83,5 @@ const isDark = computed({
 })
 const currentYear = new Date().getFullYear()
 </script>
+
+<style scoped></style>

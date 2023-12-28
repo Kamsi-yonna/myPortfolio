@@ -1,7 +1,9 @@
 <template>
-  efefwefewfwe
-
-  <h1>rfewfjwbfhwefbwekj</h1>
+  <main class="min-h-screen">
+    <div class="space-y-24">
+      <Intro />
+    </div>
+  </main>
 </template>
 
 <script></script>
