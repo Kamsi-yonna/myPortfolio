@@ -17,7 +17,20 @@ module.exports = {
     },
     fontFamily: {
       Audiowide: []
+    },
+    keyframes: {
+      pulse: {
+        '0%, 100%': {
+          opacity: '1'
+        },
+        '50%': {
+          opacity: '.8'
+        }
+      }
+    },
+    animation: {
+      pulse: 'pulse 1.4s ease-in-out infinite'
     }
   },
-  plugins: [require('@tailwindcss/typography')]
+  plugins: [require('@tailwindcss/typography'), '@tailwindcss/animation']
 } satisfies Config

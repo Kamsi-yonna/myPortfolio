@@ -52,5 +52,11 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'lucide']
   },
   components: [],
-  plugins: []
+  plugins: [],
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind/index.css',
+    configPath: 'tailwind.config',
+    injectPosition: 'first',
+    viewer: false
+  }
 })
