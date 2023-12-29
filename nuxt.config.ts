@@ -34,7 +34,7 @@ export default defineNuxtConfig({
       '@nuxtjs/google-fonts',
       {
         families: {
-          Audiowide: {
+          Poppins: {
             wght: [300, 400, 500, 700, 800]
           }
         },

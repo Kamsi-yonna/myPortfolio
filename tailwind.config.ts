@@ -16,7 +16,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      Audiowide: []
+      Poppins: []
     },
     keyframes: {
       pulse: {

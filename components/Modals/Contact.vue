@@ -5,14 +5,19 @@ const isOpen = ref(false)
 
 <template>
   <div>
-    <div class="mb-6 flex items-center gap-3">
-      <div class="flex-none rounded-full p-1 text-primary-500 bg-primary-500/10">
-        <div class="h-1.5 w-1.5 rounded-full bg-current"></div>
+    <div class="mb-6 items-center space-y-3">
+      <div class="flex-none rounded-full text-gray-900 dark:text-gray-400">
+        <div class="h-2 w-2 rounded-full bg-primary dark:bg-secondary"></div>
       </div>
-      <h2 class="uppercase text-xs font-semibold text-gray-400">STAY IN TOUCH:</h2>
+      <h2 class="uppercase text-[13px] font-semibold text-gray-900 dark:text-gray-400 animate-bounce">
+        If you like my work, feel free to hit me up for a project collab or even just a chat!
+        <br />
+        Let's make things happen together! 🚀
+      </h2>
       <UButton
-        class="uppercase text-xs font-semibold text-gray-400"
-        label="Click to send me a mail"
+        class="text-xs py-2 font-semibold text-gray-50 dark:text-gray-900"
+        color="black"
+        label="Send an Email &#8599;"
         @click="isOpen = true" />
     </div>
 

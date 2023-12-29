@@ -9,11 +9,13 @@
         format="webp"
         placeholder
         sizes="48px sm:64px"
-        src="/profile.jpg" />
+        src="~/public/profile.jpg" />
     </UTooltip>
     <h1 class="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100">Hey there!</h1>
     <p class="text-gray-900 dark:text-gray-400 font-light">
-      My name is Kamsiyonna, a self-motivated & curious developer based in the vibrant city of Lagos, Nigeria.
+      My name is
+      <span class="text-primary dark:text-blue animate-pulse">Kamsiyonna</span>
+      , a self-motivated & curious developer based in the vibrant city of Lagos, Nigeria.
       <br />
       I have a passion for learning and a desire to solve problems with design. My approach involves uncovering
       insights, reframing problems, and crafting forward-thinking solutions.
