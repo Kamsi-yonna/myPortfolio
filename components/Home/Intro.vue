@@ -5,11 +5,11 @@
       text="Myself">
       <NuxtImg
         alt="Kamsiyonna Etiobi"
-        class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-24 w-24 sm:h-24 sm:w-24"
+        class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-24 w-24 sm:h-24 sm:w-24 object-cover"
         format="webp"
         placeholder
         sizes="48px sm:64px"
-        src="~/public/profile.jpg" />
+        src="/images/profile.jpg" />
     </UTooltip>
     <h1 class="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100">Hey there!</h1>
     <p class="text-gray-900 dark:text-gray-400 font-light">
