@@ -41,6 +41,11 @@ const links = [
     name: 'Linkedin',
     url: 'https://www.linkedin.com/in/1kamsiyonna/',
     icon: 'mdi:linkedin'
+  },
+  {
+    name: 'Youtube',
+    url: 'https://www.youtube.com/@kamsi_yonna',
+    icon: 'mdi:youtube'
   }
 ]
 </script>

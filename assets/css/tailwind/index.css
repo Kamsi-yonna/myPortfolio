@@ -18,3 +18,7 @@
 .active-link-circle {
   @apply absolute h-8 w-8 z-0 rounded-full bg-gray-100 dark:bg-white/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
+
+.label-input {
+  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
