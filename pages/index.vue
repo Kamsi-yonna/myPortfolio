@@ -3,7 +3,7 @@
     <div class="space-y-24">
       <Intro />
       <Socials />
-      <Articles />
+      <FeaturedArticles />
       <Contact />
     </div>
   </main>
