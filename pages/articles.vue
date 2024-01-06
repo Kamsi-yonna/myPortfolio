@@ -6,7 +6,7 @@
         {{ description }}
       </p>
     </div>
-    <ArticleCard />
+    <ArticleCard :articlesToShow="10" />
   </main>
 </template>
 
