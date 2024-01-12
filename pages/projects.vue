@@ -14,6 +14,8 @@
 </template>
 
 <script setup lang="ts">
+const projects = ref<string | any>()
+
 const description =
   'Discover my Projects – a showcase of realistic and accomplished endeavors. Explore a curated collection of works that reflect my expertise and pride in various tech projects developed over the years.'
 
@@ -22,5 +24,6 @@ useSeoMeta({
   description
 })
 
-const { data: projects } = await useAsyncData('projects-all', () => queryContent('/projects').find())
+const { data } = await useAsyncData('projects-all', () => queryContent('/projects').find())
+projects.value = data.value
 </script>

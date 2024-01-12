@@ -5,6 +5,7 @@
   },
   "root": true,
   "rules": {
+    "no-console": "off"
     /* Rules can be found in ./.eslrules/*.eslintrc* */
   },
   "parser": "vue-eslint-parser",
