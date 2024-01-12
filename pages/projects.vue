@@ -5,25 +5,17 @@
       <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
         {{ description }}
       </p>
-      <ProjectCard
-        v-for="(project, id) in projects"
-        :key="id"
-        :project="project" />
+      <ProjectCard :projectsToShow="4" />
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
-const projects = ref<string | any>()
-
 const description =
-  'Discover my Projects – a showcase of realistic and accomplished endeavors. Explore a curated collection of works that reflect my expertise and pride in various tech projects developed over the years.'
+  'Discover my projects – a showcase of realistic and accomplished endeavors. Explore a curated collection of works that reflect my expertise and pride in various tech projects developed over the years.'
 
 useSeoMeta({
   title: 'Projects | Kamsiyonna',
   description
 })
-
-const { data } = await useAsyncData('projects-all', () => queryContent('/projects').find())
-projects.value = data.value
 </script>

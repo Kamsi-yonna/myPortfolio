@@ -1,0 +1,7 @@
+{
+  "name": "Numbre",
+  "url": "https://guessking.netlify.app/",
+  "description": "The goal is to reach a winning score through by rolling the dice.",
+  "thumbnail": "/projects/game_die.png",
+  "status": "Active"
+}

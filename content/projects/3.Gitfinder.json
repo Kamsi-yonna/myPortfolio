@@ -1,0 +1,7 @@
+{
+  "name": "Gitfinder",
+  "url": "https://findmyhub.netlify.app/",
+  "description": "Leveraging github's API, search a username and see their repositories, followers and following.",
+  "thumbnail": "/projects/gitfinder.png",
+  "status": "Active"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Guess King",
+  "url": "https://guessking.netlify.app/",
+  "description": "I'm thinking of a number between 1 and 20. <br />Can you guess the number?🤔",
+  "thumbnail": "/projects/pig.png",
+  "status": "Active"
+}
