@@ -86,7 +86,7 @@ const isOpen = ref(false)
 
         <template #footer>
           <Placeholder class="h-8 items-center" />
-          <span class="text-sm text-base font-light leading-6 text-gray-900 dark:text-white">
+          <span class="text-sm font-light leading-6 text-gray-900 dark:text-white">
             I will definitely respond within 24 hours.
           </span>
         </template>
