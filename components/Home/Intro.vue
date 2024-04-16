@@ -28,7 +28,7 @@
       By day, I'm a Junior Frontend Developer at
       <a
         class="underline text-primary dark:text-blue"
-        href="https://check-dc.com/"
+        href="https://wearecheck.co/"
         target="_blank">
         Check
       </a>
