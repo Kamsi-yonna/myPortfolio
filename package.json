@@ -48,10 +48,5 @@
     "@nuxt/ui": "2.11.1",
     "ipx": "2.0.2",
     "vue-use-fixed-header": "^2.0.0"
-  },
-  "engines": {
-    "npm": "10.2.4",
-    "node": "21.4.0"
-  },
-  "packageManager": "pnpm@8.8.8"
+  }
 }
