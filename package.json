@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "kam-port",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,7 +12,7 @@
     "lint-fix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.10.0",
+    "@nuxt/content": "^2.12.1",
     "@nuxt/devtools": "latest",
     "@nuxthq/studio": "1.0.5",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-prefer-arrow-functions": "3.1.4",
     "eslint-plugin-vue": "9.14.1",
-    "nuxt": "3.8.2",
+    "nuxt": "3.10.3",
     "nuxt-icon": "0.6.7",
     "prettier": "3.1.1",
     "prettier-plugin-tailwindcss": "0.5.9",

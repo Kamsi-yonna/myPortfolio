@@ -69,8 +69,6 @@ const items = [
   { name: 'Projects', path: '/Projects', icon: 'solar:folder-with-files-outline' },
   { name: 'Articles', path: '/Articles', icon: 'solar:document-add-outline' },
   { name: 'Lab', path: '/lab', icon: 'heroicons:beaker' }
-  // { name: "What's in my bag?", path: '/red', icon: 'solar:backpack-outline' }
-  // { name: 'Bookmarks', path: '/Bookmarks', icon: 'solar:bookmark-linear' }
 ]
 
 const colorMode = useColorMode()
