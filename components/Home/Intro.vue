@@ -3,7 +3,7 @@
     <UTooltip
       :popper="{ placement: 'right', arrow: 'true' }"
       text="Myself">
-      <NuxtImg
+      <img
         alt="Kamsiyonna Etiobi"
         class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-24 w-24 sm:h-24 sm:w-24 object-cover"
         format="webp"
@@ -32,19 +32,15 @@
         target="_blank">
         Check
       </a>
-      , and by night, I'm reading or getting my hands dirty with codes written by my seniors.
+      , and by night, I'm reading or getting my hands dirty with open source projects.
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      Outside of programming, I dabble in architecture and interior design. I enjoy listening to music a lot, reading
-      and simply being.
+      Outside of programming, I dabble in architecture and interior design.
+      <br />
+      I enjoy listening to music a lot, reading and simply
+      <em class="font-bold">being.</em>
     </p>
   </div>
 </template>
 
-<script setup>
-useSeoMeta({
-  title: 'Kamsiyonna Etiobi',
-  description:
-    'My name is Kamsiyonna, a self-motivated & curious developer based in the vibrant city of Lagos, Nigeria.I have a passion for learning and a desire to create functional user friendly websites. I build web applications and sites using Javascript, Typescript, Vuejs, Nuxtjs & tailwind css.'
-})
-</script>
+<script setup></script>
