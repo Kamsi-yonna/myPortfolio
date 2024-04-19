@@ -34,5 +34,5 @@
 }
 
 .search-input {
-  @apply max-w-screen-lg mx-auto flex items-center gap-2 p-2 border border-gray-800 rounded-xl hover:border-primary;
+  @apply max-w-screen-lg mx-auto flex items-center gap-2 p-2 border border-gray-500 dark:border-primary rounded-xl;
 }
