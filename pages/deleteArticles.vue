@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 const description =
-  'Explore a diverse collection of insightful articles chronicling my tech journey, career insights, programming expertise, and musings on user interfaces and front-end development. Delve into a wealth of knowledge, experiences, and perspectives that capture the essence of my professional narrative and expertise in the tech industry.'
+  'Explore a diverse collection of insightful articles pertaining to my career insights, programming expertise, and life as I percive it.'
 
 useSeoMeta({
   title: 'Articles | Kamsiyonna',

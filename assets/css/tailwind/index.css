@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* New Components */
+/* custom classes */
 .navbar {
   @apply flex items-center my-4 px-3 text-sm font-medium text-gray-800 rounded-full shadow-lg bg-white/90 shadow-gray-800/5 ring-1 backdrop-blur dark:bg-gray-800/90 dark:text-gray-200 dark:ring-white/20 ring-gray-900/5;
 }
@@ -21,4 +21,18 @@
 
 .label-input {
   @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
+
+/* articles page  */
+
+.search-box {
+  @apply space-y-1 grid grid-cols-1 gap-3;
+}
+
+.search-button {
+  @apply flex items-center justify-center mt-6 text-sm gap-4;
+}
+
+.search-input {
+  @apply max-w-screen-lg mx-auto flex items-center gap-2 p-2 border border-gray-800 rounded-xl hover:border-primary;
 }
